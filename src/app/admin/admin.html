@@ -1,0 +1,36 @@
+<h2>Administration des Utilisateurs</h2>
+
+<div class="add-user">
+  <input type="text" [(ngModel)]="newUser.nom" placeholder="Nom">
+  <input type="email" [(ngModel)]="newUser.email" placeholder="Email">
+  <select [(ngModel)]="newUser.role">
+    <option>Utilisateur</option>
+    <option>Responsable</option>
+    <option>Administrateur</option>
+  </select>
+  <button (click)="ajouterUser()">Ajouter</button>
+</div>
+
+<table class="users-table">
+  <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Email</th>
+      <th>Role</th>
+      <th>Statut</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.nom }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.role }}</td>
+      <td>{{ user.statut }}</td>
+      <td>
+        <button (click)="toggleStatut(user)">Changer Statut</button>
+        <button (click)="supprimerUser(user.id)">Supprimer</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

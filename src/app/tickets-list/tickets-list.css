@@ -1,0 +1,107 @@
+h2 {
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.top-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.top-controls input {
+  width: 260px;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  background: #f8f9fc;
+}
+
+.add-btn {
+  background: #4a6cf7;
+  color: #fff;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.add-btn:hover {
+  background: #3b5bd0;
+}
+
+/* Table Design */
+
+.table-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #f8f9fc;
+}
+
+th {
+  text-align: left;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+td {
+  padding: 14px;
+  border-top: 1px solid #eceef3;
+}
+
+/* Badges Priorité */
+.badge {
+  padding: 6px 12px;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.urgent {
+  background: #e74c3c;
+}
+
+.moyenne {
+  background: #f1c40f;
+  color: #222;
+}
+
+.basse {
+  background: #2ecc71;
+}
+
+/* Statuts */
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: #fff;
+}
+
+.ouvert {
+  background: #3498db;
+}
+
+.en\.cours {
+  background: #9b59b6;
+}
+
+.résolu, .resolu {
+  background: #2ecc71;
+}
+.actions {
+  margin-bottom: 15px;
+}

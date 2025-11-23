@@ -1,0 +1,35 @@
+<h2>Plateforme de gestion des tickets</h2>
+
+<div class="cards">
+  <div class="card open">
+    <h3>Tickets ouverts</h3>
+    <p>{{ ticketsOuverts }}</p>
+  </div>
+
+  <div class="card">
+    <h3>Tickets en cours</h3>
+    <p>{{ ticketsEnCours }}</p>
+  </div>
+
+  <div class="card">
+    <h3>Tickets résolus</h3>
+    <p>{{ ticketsResolus }}</p>
+  </div>
+
+  <div class="card">
+    <h3>Moyenne temps de résolution</h3>
+    <p>{{ tempsResolution }}</p>
+  </div>
+</div>
+
+<!-- Graphique simple en HTML -->
+<div class="graph">
+  <h3>Évolution des tickets</h3>
+
+  <div class="bars">
+    <div *ngFor="let item of evolution" class="bar-container">
+      <div class="bar" [style.height]="item.value + 'px'"></div>
+      <span>{{ item.date }}</span>
+    </div>
+  </div>
+</div>

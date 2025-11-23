@@ -1,0 +1,26 @@
+<div class="layout">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">TechFlow Solutions</div>
+
+    <nav class="menu">
+      <a routerLink="/dashboard">Accueil</a>
+      <a routerLink="/tickets">Tickets</a>
+      <a routerLink="/stats">Statistiques</a>
+      <a routerLink="/users">Utilisateurs</a>
+      <a routerLink="/settings">Paramètres</a>
+    </nav>
+  </aside>
+
+  <!-- Main content -->
+  <div class="main">
+    <header class="topbar">
+      <input type="text" placeholder="Recherche…" class="search" />
+      <div class="profile"></div>
+    </header>
+
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

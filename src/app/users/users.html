@@ -1,0 +1,32 @@
+<h2>Gestion des utilisateurs</h2>
+
+<div class="users-box">
+  <table>
+    <thead>
+      <tr>
+        <th>Utilisateur</th>
+        <th>Nom</th>
+        <th>Email</th>
+        <th>Rôle</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let u of users">
+        
+        <td>
+          <div class="avatar">{{ u.nom[0] }}</div>
+        </td>
+
+        <td>{{ u.nom }}</td>
+
+        <td>{{ u.email }}</td>
+
+        <td>
+          <span class="role" [ngClass]="u.role.toLowerCase()">{{ u.role }}</span>
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>

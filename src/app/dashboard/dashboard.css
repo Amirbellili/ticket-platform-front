@@ -1,0 +1,59 @@
+h2 {
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.card {
+  flex: 1;
+  background: white;
+  padding: 22px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  margin: 0 0 10px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.card p {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.card.open {
+  background: #e9f0ff;
+  border-left: 4px solid #4a6cf7;
+}
+
+.graph {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 25px;
+  margin-top: 15px;
+}
+
+.bar-container {
+  text-align: center;
+}
+
+.bar {
+  width: 28px;
+  border-radius: 8px;
+  background: #4a6cf7;
+}

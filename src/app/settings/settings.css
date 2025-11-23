@@ -1,0 +1,59 @@
+h2 {
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.settings-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  max-width: 600px;
+}
+
+h3 {
+  margin: 25px 0 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+label {
+  font-size: 14px;
+  margin-top: 10px;
+  display: block;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 10px;
+  border: 1px solid #d6d9df;
+  background: #f8f9fc;
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0;
+}
+
+button {
+  margin-top: 25px;
+  padding: 12px 18px;
+  border: none;
+  background: #4a6cf7;
+  color: white;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #3b5bd0;
+}

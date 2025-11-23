@@ -1,0 +1,33 @@
+<h2>Paramètres du compte</h2>
+
+<div class="settings-box">
+
+  <h3>Informations personnelles</h3>
+  <label>Nom complet</label>
+  <input type="text" [(ngModel)]="user.name">
+
+  <label>Email</label>
+  <input type="email" [(ngModel)]="user.email">
+
+  <h3>Mot de passe</h3>
+  <label>Nouveau mot de passe</label>
+  <input type="password">
+
+  <label>Confirmer le mot de passe</label>
+  <input type="password">
+
+  <h3>Préférences</h3>
+
+  <div class="switch">
+    <input type="checkbox" [(ngModel)]="preferences.darkMode"> 
+    <span>Activer le thème sombre</span>
+  </div>
+
+  <div class="switch">
+    <input type="checkbox" [(ngModel)]="preferences.notifications">
+    <span>Notifications email</span>
+  </div>
+
+  <button (click)="saveSettings()">Sauvegarder</button>
+
+</div>

@@ -1,0 +1,70 @@
+h2 {
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.users-box {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #f5f7fc;
+}
+
+th {
+  text-align: left;
+  font-weight: 600;
+  padding: 14px;
+  font-size: 14px;
+  color: #5a6572;
+}
+
+td {
+  padding: 16px;
+  border-top: 1px solid #eceef4;
+  font-size: 15px;
+}
+
+/* Avatar */
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #4a6cf7;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+/* Roles */
+.role {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #fff;
+}
+
+/* Couleurs */
+.admin {
+  background: #4a6cf7;
+}
+
+.support {
+  background: #f1c40f;
+  color: #333;
+}
+
+.user {
+  background: #2ecc71;
+}

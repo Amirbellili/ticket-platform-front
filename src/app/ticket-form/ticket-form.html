@@ -1,0 +1,28 @@
+<h2 *ngIf="mode === 'create'">Créer un ticket</h2>
+<h2 *ngIf="mode === 'edit'">Modifier le ticket #{{ ticketId }}</h2>
+
+<form class="form">
+
+  <label>Titre</label>
+  <input type="text" [(ngModel)]="ticket.titre" name="titre" required />
+
+  <label>Description</label>
+  <textarea [(ngModel)]="ticket.description" name="description" required></textarea>
+
+  <label>Priorité</label>
+  <select [(ngModel)]="ticket.priorite" name="priorite">
+    <option>Haute</option>
+    <option>Moyenne</option>
+    <option>Basse</option>
+  </select>
+
+  <label>Statut</label>
+  <select [(ngModel)]="ticket.statut" name="statut">
+    <option>Ouvert</option>
+    <option>En cours</option>
+    <option>Résolu</option>
+  </select>
+
+  <button (click)="enregistrer()">Enregistrer</button>
+
+</form>

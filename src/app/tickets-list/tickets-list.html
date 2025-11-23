@@ -1,0 +1,45 @@
+<h2>Liste des tickets</h2>
+
+<div class="top-controls">
+  <input type="text" placeholder="Rechercher un ticket…" [(ngModel)]="search">
+
+  <!-- 🔥 التعديل المهم: routerLink ajouté هنا -->
+  <button class="add-btn" routerLink="/tickets/create">
+    + Nouveau ticket
+  </button>
+</div>
+
+<div class="table-box">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Titre</th>
+        <th>Priorité</th>
+        <th>Statut</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let t of filteredTickets">
+        <td>{{ t.id }}</td>
+        <td>{{ t.titre }}</td>
+
+        <td>
+          <span class="badge" [ngClass]="t.priorite.toLowerCase()">
+            {{ t.priorite }}
+          </span>
+        </td>
+
+        <td>
+          <span class="status" [ngClass]="t.statut.toLowerCase()">
+            {{ t.statut }}
+          </span>
+        </td>
+
+        <td>{{ t.date }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
