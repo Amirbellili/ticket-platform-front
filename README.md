@@ -8,7 +8,7 @@ Interface web de gestion des tickets développée avec Angular.
 - Angular
 - TypeScript
 - HTML / CSS
-- Docker (optionnel)
+- Docker
 
 ---
 
